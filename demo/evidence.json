@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0",
+  "mode": "fixture",
+  "evidence": [
+    {"id":"EV-001","resource_id":"demo/private-storage","subscription_id":"synthetic-lab","source":"synthetic fixture","collector_version":"fixture-1.0","collected_at":"2026-11-16T09:00:00Z","collection_status":"success","properties":{"allowBlobPublicAccess":false}},
+    {"id":"EV-002","resource_id":"demo/permissive-storage","subscription_id":"synthetic-lab","source":"synthetic fixture","collector_version":"fixture-1.0","collected_at":"2026-11-16T09:00:00Z","collection_status":"success","properties":{"allowBlobPublicAccess":true}},
+    {"id":"EV-003","resource_id":"demo/missing-setting","subscription_id":"synthetic-lab","source":"synthetic fixture","collector_version":"fixture-1.0","collected_at":"2026-11-16T09:00:00Z","collection_status":"success","properties":{}},
+    {"id":"EV-004","resource_id":"demo/stale-evidence","subscription_id":"synthetic-lab","source":"synthetic fixture","collector_version":"fixture-1.0","collected_at":"2026-11-14T09:00:00Z","collection_status":"success","properties":{"allowBlobPublicAccess":false}},
+    {"id":"EV-005","resource_id":"demo/permission-denied","subscription_id":"synthetic-lab","source":"synthetic fixture","collector_version":"fixture-1.0","collected_at":"2026-11-16T09:00:00Z","collection_status":"error","properties":{}}
+  ]
+}

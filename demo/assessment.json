@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "mode": "fixture",
+  "as_of": "2026-11-16T12:00:00+00:00",
+  "input_sha256": "ca9f7fe5dbbe42166df83fa0d1fb50d807dafa77535592c234fd573d3d31b0bf",
+  "summary": {
+    "pass": 1,
+    "fail": 1,
+    "unknown": 3
+  },
+  "assessments": [
+    {
+      "control_id": "CB-STORAGE-001",
+      "rule_version": "1.0",
+      "evidence_id": "EV-001",
+      "resource_id": "demo/private-storage",
+      "result": "pass",
+      "reason": "Account-level anonymous blob access is explicitly disallowed."
+    },
+    {
+      "control_id": "CB-STORAGE-001",
+      "rule_version": "1.0",
+      "evidence_id": "EV-002",
+      "resource_id": "demo/permissive-storage",
+      "result": "fail",
+      "reason": "Account allows anonymous blob access configuration. Actual exposure depends on container settings; it is not established here."
+    },
+    {
+      "control_id": "CB-STORAGE-001",
+      "rule_version": "1.0",
+      "evidence_id": "EV-003",
+      "resource_id": "demo/missing-setting",
+      "result": "unknown",
+      "reason": "Explicit account setting is missing or null; no default is inferred."
+    },
+    {
+      "control_id": "CB-STORAGE-001",
+      "rule_version": "1.0",
+      "evidence_id": "EV-004",
+      "resource_id": "demo/stale-evidence",
+      "result": "unknown",
+      "reason": "Evidence exceeds the local lab freshness policy of 24 hours."
+    },
+    {
+      "control_id": "CB-STORAGE-001",
+      "rule_version": "1.0",
+      "evidence_id": "EV-005",
+      "resource_id": "demo/permission-denied",
+      "result": "unknown",
+      "reason": "Collection failed; the resource setting has not been established."
+    }
+  ]
+}
